@@ -1,14 +1,13 @@
-.product-card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+.product-card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .product-image-wrapper {
   height: 240px;
   display: flex;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .product-image {
@@ -16,4 +15,11 @@
   width: auto !important;
   max-width: 240px;
   max-height: 240px;
+}
+
+.product-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
