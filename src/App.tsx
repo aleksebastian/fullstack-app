@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import ProductCard from "./components/ProductCard";
 import { Product } from "./product";
 import "./App.css";
+import Nav from "./components/Nav";
 
 function App() {
   useEffect(() => {
@@ -18,10 +19,13 @@ function App() {
 
   return (
     <div className="App">
-      <div className="products-grid">
-        {products.map((product) => (
-          <ProductCard product={product} key={product.id} />
-        ))}
+      <Nav />
+      <div className="content">
+        <div className="products-grid">
+          {products.map((product) => (
+            <ProductCard product={product} key={product.id} />
+          ))}
+        </div>
       </div>
     </div>
   );
