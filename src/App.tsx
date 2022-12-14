@@ -3,6 +3,7 @@ import ProductCard from "./components/ProductCard";
 import { Product } from "./product";
 import "./App.css";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
