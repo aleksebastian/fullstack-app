@@ -1,0 +1,19 @@
+.product-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product-image-wrapper {
+  height: 240px;
+  display: flex;
+  align-items: center;
+}
+
+.product-image {
+  margin: 0 auto;
+  width: auto !important;
+  max-width: 240px;
+  max-height: 240px;
+}
