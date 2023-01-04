@@ -13,6 +13,7 @@ interface Props {
 }
 
 const ProductCard: React.FC<Props> = ({ product }) => {
+  const price = product.price.toFixed(2);
   return (
     <Card className="product-card">
       <div className="product-image-wrapper">
@@ -27,7 +28,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
         <Typography gutterBottom component="div">
           {product.title}
         </Typography>
-        <Typography variant="h6">${product.price}</Typography>
+        <Typography variant="h6">${price}</Typography>
       </CardContent>
       <CardActions>
         {/* <Button size="small">Share</Button> */}
